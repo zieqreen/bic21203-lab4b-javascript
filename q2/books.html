@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 4b - Question 2: JSON & fetch()</title>
+</head>
+<body>
+  <h2>Book Collection</h2>
+  <div id="display">Loading books...</div>
+
+  <script>
+    const displayDiv = document.getElementById("display");
+
+    fetch("books.json")
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("HTTP error! Status: " + response.status);
+        }
+        return response.json();
+      })
+      .then(function (data) {
+        displayDiv.textContent = "";
+
+        const p1 = document.createElement("p");
+        p1.textContent = "First Book Title: " + data.books[0].title;
+        displayDiv.appendChild(p1);
+
+        const p2 = document.createElement("p");
+        p2.textContent = "Second Book Author: " + data.books[1].author;
+        displayDiv.appendChild(p2);
+
+        const ul = document.createElement("ul");
+        for (let i = 0; i < data.books.length; i++) {
+          const li = document.createElement("li");
+          li.textContent = data.books[i].title + ": " + data.books[i].genres.join(", ");
+          ul.appendChild(li);
+        }
+        displayDiv.appendChild(ul);
+      })
+      .catch(function (error) {
+        displayDiv.textContent = "Error loading JSON data: " + error.message;
+      });
+  </script>
+</body>
+</html>
