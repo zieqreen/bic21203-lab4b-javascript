@@ -15,49 +15,15 @@ This repository contains the client-side scripting exercises for **Lab #4b**, de
 
 ---
 
-## Repository Structure
-
-```text
-├── books.json          # Question 1: Valid JSON dataset containing book metadata and genre arrays
-├── books.html          # Question 2: Fetches books.json via HTTP and renders selected fields safely
-├── jquery-dom.html     # Question 3: Demonstrates jQuery 4.0.0 DOM manipulation and click event handling
-├── screenshots/        # Folder containing output screenshots for documentation
-└── README.md           # Setup instructions, project overview, and output evidence
-```
-
----
-
-## Setup & Execution Instructions
-
-> **Important Note:** Do **not** open `books.html` directly via the `file://` protocol. Modern browsers block `fetch()` requests to local files due to CORS security policies. Use a local HTTP development server instead.
-
-### Running with VS Code Live Server
-1. **Clone or download this repository:**
-   ```bash
-   git clone <your-github-repository-url>
-   cd <repository-folder-name>
-   ```
-2. **Open the folder in Visual Studio Code:**
-   - Go to `File > Open Folder...` and select the project directory.
-3. **Install the Live Server extension (if not already installed):**
-   - Open Extensions (`Ctrl + Shift + X`), search for **Live Server** by *Ritwick Dey*, and click **Install**.
-4. **Launch the web pages:**
-   - Right-click `books.html` in the VS Code Explorer and select **Open with Live Server**.
-   - Your browser will open at `http://127.0.0.1:5500/books.html`.
-   - Open `http://127.0.0.1:5500/jquery-dom.html` to view Question 3.
-
----
-
 ## Expected Outputs & Screenshots
-
-*(Save your screenshots inside a `screenshots/` folder in your repository and ensure the filenames match the paths below.)*
 
 ### Question 1: Valid JSON Dataset (`books.json`)
 - Contains a top-level `"books"` array with two book objects, double-quoted property names, numeric `publicationYear`, and string-array `genres`.
 - Verified using `JSON.parse()` in the browser Developer Tools Console (`F12`).
 
-![books.json Code](screenshots/q1-books-json.png)
-![JSON.parse() Confirmation](screenshots/q1-json-parse.png)
+![books.json Code] <img width="358" height="279" alt="image" src="https://github.com/user-attachments/assets/3eed413b-6c73-4a64-b094-5af06bcb7900" />
+![JSON.parse() Confirmation] <img width="164" height="25" alt="image" src="https://github.com/user-attachments/assets/438efc98-2ac4-4ccf-bf8d-b07f7a157fc3" />
+
 
 ### Question 2: Fetch & Display JSON (`books.html`)
 - Retrieves `books.json` asynchronously over HTTP and safely inserts text using `createElement()` and `textContent`.
@@ -68,7 +34,8 @@ This repository contains the client-side scripting exercises for **Lab #4b**, de
     - The Great Gatsby: Fiction, Classics
     - To Kill a Mockingbird: Fiction, Coming-of-Age
 
-![books.html Browser Output](screenshots/q2-books-html.png)
+![books.html Browser Output] <img width="449" height="237" alt="image" src="https://github.com/user-attachments/assets/0b1c953f-35d3-4b29-bfa8-81a71ad56894" />
+
 
 ### Question 3: jQuery DOM & Event Comparison (`jquery-dom.html`)
 - Uses jQuery 4.0.0 (`https://code.jquery.com/jquery-4.0.0.min.js`) to:
@@ -76,4 +43,4 @@ This repository contains the client-side scripting exercises for **Lab #4b**, de
   2. Apply the `.myStyle` CSS class (`background-color: coral; padding: 16px;`) to `#myDIV` via `.addClass()`.
   3. Trigger an `alert("Button clicked!")` dialog on `#myButton` click via `.on("click", ...)`.
 
-![jquery-dom.html Output and Alert](screenshots/q3-jquery-dom.png)
+![jquery-dom.html Output and Alert] <img width="1273" height="258" alt="image" src="https://github.com/user-attachments/assets/48ec216c-7ec6-4179-a7ca-a8166e0ac8ef" />
