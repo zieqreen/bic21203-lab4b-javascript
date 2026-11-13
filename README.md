@@ -21,8 +21,12 @@ This repository contains the client-side scripting exercises for **Lab #4b**, de
 - Contains a top-level `"books"` array with two book objects, double-quoted property names, numeric `publicationYear`, and string-array `genres`.
 - Verified using `JSON.parse()` in the browser Developer Tools Console (`F12`).
 
-![books.json Code] <img width="358" height="279" alt="image" src="https://github.com/user-attachments/assets/3eed413b-6c73-4a64-b094-5af06bcb7900" />
-![JSON.parse() Confirmation] <img width="164" height="25" alt="image" src="https://github.com/user-attachments/assets/438efc98-2ac4-4ccf-bf8d-b07f7a157fc3" />
+[books.json Code] 
+<img width="358" height="279" alt="image" src="https://github.com/user-attachments/assets/3eed413b-6c73-4a64-b094-5af06bcb7900" />
+
+
+[JSON.parse() Confirmation] 
+<img width="164" height="25" alt="image" src="https://github.com/user-attachments/assets/438efc98-2ac4-4ccf-bf8d-b07f7a157fc3" />
 
 
 ### Question 2: Fetch & Display JSON (`books.html`)
@@ -34,7 +38,8 @@ This repository contains the client-side scripting exercises for **Lab #4b**, de
     - The Great Gatsby: Fiction, Classics
     - To Kill a Mockingbird: Fiction, Coming-of-Age
 
-![books.html Browser Output] <img width="449" height="237" alt="image" src="https://github.com/user-attachments/assets/0b1c953f-35d3-4b29-bfa8-81a71ad56894" />
+[books.html Browser Output] 
+<img width="449" height="237" alt="image" src="https://github.com/user-attachments/assets/0b1c953f-35d3-4b29-bfa8-81a71ad56894" />
 
 
 ### Question 3: jQuery DOM & Event Comparison (`jquery-dom.html`)
@@ -43,4 +48,5 @@ This repository contains the client-side scripting exercises for **Lab #4b**, de
   2. Apply the `.myStyle` CSS class (`background-color: coral; padding: 16px;`) to `#myDIV` via `.addClass()`.
   3. Trigger an `alert("Button clicked!")` dialog on `#myButton` click via `.on("click", ...)`.
 
-![jquery-dom.html Output and Alert] <img width="1273" height="258" alt="image" src="https://github.com/user-attachments/assets/48ec216c-7ec6-4179-a7ca-a8166e0ac8ef" />
+[jquery-dom.html Output and Alert] 
+<img width="1273" height="258" alt="image" src="https://github.com/user-attachments/assets/48ec216c-7ec6-4179-a7ca-a8166e0ac8ef" />
